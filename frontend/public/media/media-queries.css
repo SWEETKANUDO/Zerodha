@@ -1,0 +1,521 @@
+/* =========================================================
+   Zerodha Clone - Clean Responsive CSS
+   Bootstrap based
+   ========================================================= */
+
+/* =========================
+   GLOBAL
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1 {
+  line-height: 1.3;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+   ========================= */
+
+.navbar > .container {
+  min-height: 70px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.navbar-brand {
+  flex-shrink: 0;
+}
+
+.navbar-brand img {
+  width: 140px !important;
+  max-width: 40vw;
+  height: auto;
+}
+
+.navbar-toggler {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar form.d-flex {
+  margin-left: auto;
+}
+
+/* =========================
+   HERO / OPEN ACCOUNT
+   ========================= */
+
+.container.p-5.mb-5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   AWARDS / EDUCATION
+   ========================= */
+
+.container.mt-5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media (max-width: 991.98px) {
+  /* Navbar */
+
+  .navbar > .container {
+    flex-wrap: wrap !important;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar .navbar-collapse {
+    flex-basis: 100%;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .navbar .navbar-nav {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .navbar .nav-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navbar .nav-link {
+    display: block;
+  }
+
+  .navbar form.d-flex {
+    width: 100%;
+    margin: 10px 0 0;
+    justify-content: center;
+  }
+
+  /* Hero */
+
+  .container.p-5.mb-5 {
+    padding: 40px 30px !important;
+  }
+
+  .container.p-5.mb-5 img {
+    width: 100%;
+    margin-bottom: 30px !important;
+  }
+
+  .container.p-5.mb-5 h1 {
+    font-size: 32px;
+  }
+
+  .container.p-5.mb-5 button {
+    width: 35% !important;
+  }
+
+  /* Awards / Education */
+
+  .container.mt-5 .col-6.p-5 {
+    padding: 25px !important;
+  }
+
+  .container.mt-5 .col-6.p-5.mt-5 {
+    margin-top: 0 !important;
+  }
+
+  .container.mt-5 .col-6.p-5 > img {
+    width: 100% !important;
+  }
+
+  /* Stats */
+
+  .container.p-3 {
+    padding: 20px !important;
+  }
+
+  .container.p-3 .row.p-5 {
+    padding: 30px !important;
+  }
+
+  .container.p-3 .col-6.p-5 {
+    padding: 25px !important;
+  }
+
+  .container.p-3 .col-6 img {
+    width: 100% !important;
+  }
+
+  /* Pricing */
+
+  .container .row > .col-4 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 30px;
+  }
+
+  .container .row > .col-2 {
+    display: none;
+  }
+
+  .container .row > .col-6.mb-5 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* Footer */
+
+  footer .container .row.mt-5 {
+    text-align: center;
+  }
+
+  footer .container .row.mt-5 > .col {
+    margin-bottom: 25px;
+  }
+
+  footer .container .row.mt-5 .col img {
+    width: 35% !important;
+    display: block;
+    margin: 0 auto 15px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 767.98px) {
+  /* Navbar */
+
+  .navbar > .container {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+
+  .navbar-brand img {
+    width: 120px !important;
+  }
+
+  /* Hero */
+
+  .container.p-5.mb-5 {
+    padding: 30px 20px !important;
+  }
+
+  .container.p-5.mb-5 img {
+    width: 100%;
+    margin-bottom: 25px !important;
+  }
+
+  .container.p-5.mb-5 h1 {
+    font-size: 28px;
+    margin-top: 20px !important;
+  }
+
+  .container.p-5.mb-5 p {
+    font-size: 16px;
+  }
+
+  .container.p-5.mb-5 button {
+    width: 60% !important;
+    font-size: 16px !important;
+  }
+
+  /* Two-column sections become one column */
+
+  .container.mt-5 .row > .col-6,
+  .container.p-3 .row.p-5 > .col-6 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* Awards */
+
+  .container.mt-5 .col-6.p-5 {
+    padding: 20px 15px !important;
+  }
+
+  .container.mt-5 .col-6.p-5 > img {
+    width: 90% !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .container.mt-5 .col-6.p-5 h1 {
+    font-size: 28px;
+  }
+
+  .container.mt-5 .col-6.p-5 p {
+    font-size: 15px;
+  }
+
+  /* Keep nested columns two-wide */
+
+  .container.mt-5 .col-6.p-5 .row > .col-6 {
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  /* Stats */
+
+  .container.p-3 .col-6.p-5 {
+    padding: 20px 15px !important;
+  }
+
+  .container.p-3 .col-6 img {
+    width: 90% !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .container.p-3 h1 {
+    font-size: 26px;
+  }
+
+  .container.p-3 p {
+    font-size: 15px;
+  }
+
+  .container.p-3 .text-center a {
+    display: inline-block;
+    margin: 8px !important;
+  }
+
+  /* Pricing */
+
+  .container .col-4 h1 {
+    font-size: 27px;
+  }
+
+  .container .col-4 p {
+    font-size: 15px;
+  }
+
+  .container .col-6.mb-5 .row.text-center {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .container .col-6.mb-5 .row.text-center .col {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin-bottom: 15px;
+  }
+
+  .container .col-6.mb-5 .row.text-center .col h1 {
+    font-size: 30px;
+  }
+
+  /* Education */
+
+  .container.mt-5 .col-6 img[src*="education"] {
+    width: 70% !important;
+    display: block;
+    margin: 0 auto 30px;
+  }
+
+  .container.mt-5 h1.fs-2 {
+    font-size: 25px !important;
+    text-align: center;
+  }
+
+  /* Footer */
+
+  footer .container .row.mt-5 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  footer .container .row.mt-5 > .col {
+    width: 50%;
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 575.98px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* Navbar */
+
+  .navbar > .container {
+    padding: 10px 15px !important;
+  }
+
+  .navbar-brand img {
+    width: 110px !important;
+  }
+
+  .navbar-toggler {
+    padding: 5px 8px;
+  }
+
+  /* Hero */
+
+  .container.p-5.mb-5 {
+    padding: 25px 15px !important;
+  }
+
+  .container.p-5.mb-5 h1 {
+    font-size: 24px;
+  }
+
+  .container.p-5.mb-5 p {
+    font-size: 14px;
+  }
+
+  .container.p-5.mb-5 button {
+    width: 80% !important;
+    font-size: 15px !important;
+  }
+
+  /* Awards */
+
+  .container.mt-5 .col-6.p-5 {
+    padding: 15px !important;
+  }
+
+  .container.mt-5 .col-6.p-5 > img {
+    width: 100% !important;
+  }
+
+  .container.mt-5 .col-6.p-5 h1 {
+    font-size: 24px;
+  }
+
+  .container.mt-5 .col-6.p-5 p {
+    font-size: 14px;
+  }
+
+  .container.mt-5 .col-6.p-5 .row > .col-6 {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  /* Stats */
+
+  .container.p-3 {
+    padding: 10px !important;
+  }
+
+  .container.p-3 .row.p-5 {
+    padding: 15px !important;
+  }
+
+  .container.p-3 .col-6.p-5 {
+    padding: 15px !important;
+  }
+
+  .container.p-3 .col-6 img {
+    width: 100% !important;
+  }
+
+  .container.p-3 h1 {
+    font-size: 23px;
+  }
+
+  /* Pricing */
+
+  .container .col-4 h1 {
+    font-size: 24px;
+  }
+
+  .container .col-6.mb-5 .row.text-center .col {
+    padding: 20px !important;
+  }
+
+  .container .col-6.mb-5 .row.text-center .col h1 {
+    font-size: 28px;
+  }
+
+  /* Education */
+
+  .container.mt-5 .col-6 img[src*="education"] {
+    width: 90% !important;
+  }
+
+  .container.mt-5 h1.fs-2 {
+    font-size: 22px !important;
+  }
+
+  .container.mt-5 .col-6 p {
+    font-size: 14px;
+  }
+
+  /* Open Account */
+
+  .container.p-5.mb-5 h1.mt-5 {
+    font-size: 24px;
+  }
+
+  .container.p-5.mb-5 button.btn-primary {
+    width: 80% !important;
+  }
+
+  /* Footer */
+
+  footer .container .row.mt-5 > .col {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+
+  footer .container .row.mt-5 .col img {
+    width: 50% !important;
+  }
+
+  footer div[style*="font-size: 14px"] p {
+    font-size: 12px !important;
+  }
+}
