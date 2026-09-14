@@ -11,6 +11,7 @@ import SupportPage from "./landing_page/support/SupportPage";
 import NotFound from "./landing_page/NotFound";
 import "../public/media/media-queries.css";
 
+
 function App() {
   return (
     <BrowserRouter>
